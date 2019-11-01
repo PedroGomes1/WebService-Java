@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="my-5 text-center">Substituição de alunos através dos índices</h1>
+            <div class="card col-md-6 mx-auto">
+                <div class="card-body">
+                    <form method ="POST" action="http://localhost:8080/WebServiceJava/webresources/substituir">
+                        <label for="nome"><strong>Nome da pessoa:</strong> </label>                              
+                        <input type="text" name="nomePessoa"><br><br>
+                        <label for="nome"><strong> Seu respectivo indice na lista: </strong> </label>                              
+                        <input type="text" name="indicePessoa"><br><br>
+                        <input type="submit" value="Substituir aluno"><br><br><br>
+                    </form>
+
+                    <div>
+                        <form method ="GET" action="http://localhost:8080/WebServiceJava/webresources/substituir"> 
+                            <input type="submit" value="Listar"><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+    </body>
+</html>
